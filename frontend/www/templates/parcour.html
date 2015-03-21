@@ -1,0 +1,49 @@
+<ion-view view-title="Parcours">
+  <ion-content >
+  <center>
+	<div>
+		<h2>{{parcour.name}}</h2>
+	</div>
+    <ion-slide-box>
+		
+      <ion-slide on-swipe-right="onSwipeRight()" on-swipe-left="onSwipeLeft()">
+        
+		
+			<h3>Description FR</h3>
+			<p>{{parcour.description}}</p>
+			<p>Longitude : {{parcour.longitude}}</p>
+			<p>Latitude : {{parcour.latitude}}</p>
+			<a class="button button-block button-positive" ng-href="{{parcour.url}}" target="_blank">Site Web de {{parcour.name}}</a>
+	
+      </ion-slide>
+	  <ion-slide on-swipe-right="onSwipeRight()" on-swipe-left="onSwipeLeft()">
+      
+		<div data-tap-disabled="true">
+			<leaflet markers="markers" center="centers" width="80%"></leaflet>
+		</div>
+
+				
+      </ion-slide>
+	  
+	  <ion-slide on-swipe-right="onSwipeRight()" on-swipe-left="onSwipeLeft()">
+        
+		<ul style="list-style-type: none; display:inline-block;">
+				<li><img src="img/mardasson.jpg" alt="mardasson" style="width:246px; height:184px"></li>
+				<li><img src="img/e_tourisme.jpg" alt="etourisme" style="width:246px; height:184px"></li>
+				<li><img src="img/Hackathon.jpg" alt="hackathon" style="width:246px; height:184px"></li>
+				
+				<li><img src="img/mardasson.jpg" alt="mardasson" style="width:246px; height:184px"></li>
+				<li><img src="img/e_tourisme.jpg" alt="etourisme" style="width:246px; height:184px"></li>
+				<li><img src="img/Hackathon.jpg" alt="hackathon" style="width:246px; height:184px"></li>
+				
+				<li><img src="img/mardasson.jpg" alt="mardasson" style="width:246px; height:184px"></li>
+				<li><img src="img/e_tourisme.jpg" alt="etourisme" style="width:246px; height:184px"></li>
+				<li><img src="img/Hackathon.jpg" alt="hackathon" style="width:246px; height:184px"></li>
+			</ul>
+		</ion-slide>
+	  
+    </ion-slide-box>
+	</center>
+  </ion-content>
+</ion-view>
+

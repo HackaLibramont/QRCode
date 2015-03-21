@@ -1,0 +1,27 @@
+<ion-view view-title="Trails">
+  <ion-content>
+  <center>
+  <div>
+		<h2>{{trail.name}}</h2>
+	</div>
+  <ion-slide-box>
+      <ion-slide on-swipe-right="onSwipeRight()" on-swipe-left="onSwipeLeft()">
+		<h3>Description</h3>
+			<p>{{trail.description}} -  {{trail.pois[0].picture[0]}}</p>
+			<img src="{{trail.qrcode}}" alt="{{trail.name}}" />
+			<h3>Distance</h3>
+			<p>3 KM</p>
+			<h3>Nombres de d'éléments</h3>
+			<p>{{trail.pois.length}}</p>
+			<a class="button button-block button-positive" ng-href="/#/app/parcours/{{trail.pois[0].id}}" target="_blank">Démarrer le trail</a>
+		</ion-slide>
+		
+		<ion-slide on-swipe-right="onSwipeRight()" on-swipe-left="onSwipeLeft()">
+			<div data-tap-disabled="true">
+				<leaflet markers="markers" center="centers" width="80%"></leaflet>
+			</div>
+		</ion-slide>
+	</ion-slide-box>
+	</center>		
+	</ion-content>
+</ion-view>

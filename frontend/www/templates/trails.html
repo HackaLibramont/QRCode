@@ -1,0 +1,13 @@
+<ion-view view-title="Trails">
+  <ion-content>
+    <ion-list>
+		
+      <ion-item ng-repeat="trail in trails" href="#/app/trails/{{trail.id}}" class="item-icon-right">
+        
+		{{trail.name}} 
+		<i class="ion-chevron-right"></i>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

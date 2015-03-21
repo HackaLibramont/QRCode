@@ -1,0 +1,13 @@
+<ion-view view-title="Parcours">
+  <ion-content>
+    <ion-list>
+		
+      <ion-item ng-repeat="parcour in parcours" href="#/app/parcours/{{parcour.id}}" class="item-icon-right">
+        
+		{{parcour.name}} 
+		<i class="ion-chevron-right"></i>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
