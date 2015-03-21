@@ -1,0 +1,11 @@
+MySQL-python==1.2.5
+Pillow==2.7.0
+SQLAlchemy==0.9.9
+argparse==1.2.1
+backports.ssl-match-hostname==3.4.0.2
+certifi==14.05.14
+qrcode==5.1
+six==1.9.0
+tornado==4.1
+torndb==0.3
+wsgiref==0.1.2
